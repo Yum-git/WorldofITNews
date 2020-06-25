@@ -13,7 +13,7 @@
         $sql = "SELECT sort_id, title, url, posttime FROM news_db";
         $sql_base = $sql;
 
-        $page = "./front.php";
+        $page = "../front.php";
 
         $searchIn = false;
         $categoryIn = false;
@@ -131,14 +131,6 @@
             $i = $articlelist[array_key_last($articlelist)] + 1;
             array_push($articlelist, $i);
         }
-
-        #取得開始位置を定義
-        #if($pagepos == 1){
-            #$i = 1;
-        #}
-        #else{
-            #$i = 50 * ($pagepos - 1) + 1;
-        #}
 
         $i_stop = $i + 49;
 

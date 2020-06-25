@@ -58,7 +58,7 @@
 				<div class="BoxOne">
 					<div class="skillbox" style="text-align: left;">
 						<?php
-							include('./List.php'); 
+							include('./output/List.php'); 
 						?>
 					</div>
 				</div>
