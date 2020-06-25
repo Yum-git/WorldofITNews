@@ -1,1 +1,1 @@
-This is my portfolio.
+このコードは公開予定のITNewsを１つのサイトにまとめたwebアプリケーションのソースコードです
