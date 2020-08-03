@@ -3,6 +3,7 @@
 	<head>
 		<title>World of ITNews Scraping</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/button.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -20,7 +21,7 @@
 		<nav class="nav-main">
 			<ul class="nav-tables">
 				<li>
-					<a href="#intro" class="button-style">Top</a>
+					<a href="./front.php" class="button-style">Top</a>
 				</li>
 				<li>
 					<a href="#Search" class="button-style">Search</a>
@@ -30,6 +31,9 @@
 				</li>
 				<li>
 					<a href="#access" class="button-style">Access</a>
+				</li>
+				<li>
+					<a href="./login.php" class="button-style">login</a>
 				</li>
 			</ul>
 		</nav>
@@ -53,12 +57,12 @@
 			</div> 
 		</div>
 		<div id="List" class="main">
-			<p class="Paragrahsize">List</p>
+			<p class="Paragrahsize">Article</p>
 			<div class="BoxIn">
 				<div class="BoxOne">
 					<div class="skillbox" style="text-align: left;">
 						<?php
-							include('./output/List.php'); 
+							include('./List.php'); 
 						?>
 					</div>
 				</div>

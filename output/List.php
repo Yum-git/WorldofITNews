@@ -1,19 +1,14 @@
 <html>
     <body>
     <?php
-        session_start();
-        
-        #example:'mysql:dbname=datebasename;host=hostname'
-        $dbn = '';
-        #example:'username'
-        $user = '';
-        #example:'sqlpassword'
-        $password = '';
+		$dbn = 'mysql:dbname=systemengine_pre;host=localhost';
+		$user = 'root';
+        $password = 'uinndouzu7';
 
         $sql = "SELECT sort_id, title, url, posttime FROM news_db";
         $sql_base = $sql;
 
-        $page = "../front.php";
+        $page = "./front.php";
 
         $searchIn = false;
         $categoryIn = false;
@@ -27,6 +22,7 @@
 			$db = new PDO($dbn, $user, $password);
 		}
 		catch(PDOException $e){
+            echo $e->getMessage();
 			echo "接続失敗";
         }
         
@@ -131,6 +127,14 @@
             $i = $articlelist[array_key_last($articlelist)] + 1;
             array_push($articlelist, $i);
         }
+
+        #取得開始位置を定義
+        #if($pagepos == 1){
+            #$i = 1;
+        #}
+        #else{
+            #$i = 50 * ($pagepos - 1) + 1;
+        #}
 
         $i_stop = $i + 49;
 

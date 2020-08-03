@@ -1,0 +1,22 @@
+runtime: php73
+
+threadsafe: true
+
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: 1
+  min_pending_latency: 3000ms 
+  max_pending_latency: automatic
+
+handlers:
+- url: /img
+  static_dir: img
+
+- url: /css
+  static_dir: css
+
+- url: /font
+  static_dir: font
+
+- url: /js
+  static_dir: js
