@@ -1,9 +1,9 @@
 <html>
     <body>
     <?php
-		$dbn = 'mysql:dbname=systemengine_pre;host=localhost';
-		$user = 'root';
-        $password = 'uinndouzu7';
+	$dbn = 'mysql:dbname=systemengine_pre;host=localhost';
+	$user = 'root';
+        $password = '';
 
         $sql = "SELECT sort_id, title, url, posttime FROM news_db";
         $sql_base = $sql;
